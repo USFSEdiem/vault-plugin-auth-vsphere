@@ -6,7 +6,7 @@ HashiCorp Vault VMware vSphere Authentication Plugin
 [![GitHub release](https://img.shields.io/github/release/USFSEdiem/vault-plugin-auth-vsphere.svg)](https://github.com/USFSEdiem/vault-plugin-auth-vsphere/releases/)
 [![license](https://img.shields.io/github/license/martezr/vault-plugin-auth-vsphere.svg)](https://github.com/martezr/vault-plugin-auth-vsphere/blob/master/LICENSE)
 
-[travis]: https://travis-ci.org/martezr/vault-plugin-auth-vsphere
+[travis]: https://travis-ci.org/USFSEdiem/vault-plugin-auth-vsphere
 
 [report-badge]: https://goreportcard.com/badge/github.com/USFSEdiem/vault-plugin-auth-vsphere
 [report]: https://goreportcard.com/report/github.com/USFSEdiem/vault-plugin-auth-vsphere
