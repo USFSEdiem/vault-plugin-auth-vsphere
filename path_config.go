@@ -16,7 +16,7 @@ func pathConfig(b *backend) *framework.Path {
 		Fields: map[string]*framework.FieldSchema{
 			"vauth_url": {
 				Type:        framework.TypeString,
-				Description: "vAuth URL address (https://vauth.grt.local)",
+				Description: "vAuth URL address (https://vauth.konflikted.home)",
 			},
 		},
 		ExistenceCheck: b.pathConfigExistCheck,

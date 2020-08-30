@@ -57,22 +57,22 @@ func pathLogin(b *backend) *framework.Path {
 }
 
 func (b *backend) pathLoginAliasLookahead(ctx context.Context, req *logical.Request, d *framework.FieldData) (*logical.Response, error) {
-	vmname := strings.ToLower(d.Get("vmname").(string))
+	vmname := d.Get("vmname").(string)
 	if vmname == "" {
 		return nil, fmt.Errorf("missing vmname")
 	}
 
-	datacenter := strings.ToLower(d.Get("datacenter").(string))
+	datacenter := d.Get("datacenter").(string)
 	if datacenter == "" {
 		return nil, fmt.Errorf("missing datacenter")
 	}
 
-	secretkey := strings.ToLower(d.Get("secretkey").(string))
+	secretkey := d.Get("secretkey").(string)
 	if secretkey == "" {
 		return nil, fmt.Errorf("missing secretkey")
 	}
 
-	role := strings.ToLower(d.Get("role").(string))
+	role := d.Get("role").(string)
 	if role == "" {
 		return nil, fmt.Errorf("missing role")
 	}
@@ -98,7 +98,7 @@ func (b *backend) pathLogin(ctx context.Context, req *logical.Request, d *framew
 	}
 
 	// Validate vmname argument
-	vmname := strings.ToLower(d.Get("vmname").(string))
+	vmname := d.Get("vmname").(string)
 
 	if vmname == "" {
 		return logical.ErrorResponse("missing vmname"), nil
